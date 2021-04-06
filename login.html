@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">	
+		<link rel="icon" href="images/favicon.png">
+		<title>Azzahra</title>
+		<link rel="stylesheet" href="css/apay-2.css">
+		<link rel="stylesheet" href="css/apay-1.css">
+		<link rel="stylesheet" href="css/apay.css">
+	</head>
+	<body>			
+	$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+					<!-- tabs -->
+					<div class="tabs-animated-wrap">
+					<div class="tabs">					
+						<!-- tabs 1 -->
+						<div id="tab-1" class="tab tab-active page-content">							
+							<!-- title -->
+							<div class="title-apps padding-middle background-primer">
+								<div class="container">
+									<div class="row row-no-margin-bottom">
+										<div class="col">
+											<h3 class="color-white">Azzahra Net</h3>
+										</div>
+											<div class="col">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end title -->
+							
+							<div class="border-radius-style background-circle background-primer">
+								<div class="container">
+									<div class="background-white border-radius padding-box-middle box-shadow">
+										<div class="row row-no-margin-bottom">
+											<div class="col-70">
+												<div class="float-left margin-right-small">
+
+		<!-- Script login page -->
+
+<form name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+														<input id="username" name="username" type="text" placeholder="Masukan Kode Voucher" value="$(username)"/>
+<input id="password" name="password" type="hidden"/>
+												</div>
+											</div>
+											<div class="col-30">
+													<button type="submit" class="buttons buttons-center buttons-full box-shadow">Login</button>
+		               </form>
+									</div>
+										</div>		
+<div class=" text-center">
+									<span class="margin-bottom-small"><p style="color:red"><b>$(if error) $(error) $(endif)</b> </p></span>
+									</div>
+								</div>
+							</div>
+							<!-- end script login page -->
+							
+											
+							<!-- separator -->
+							<div class="separator"></div>
+							<!-- end separator -->
+							<!-- menus -->
+							<div class="menus">
+								<div class="container">
+									<div class="row">
+										<div class="col">
+										$(if trial == 'yes')	<a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">$(endif)
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-yellow"><i class="fa fa-user"></i></span>
+													<h6 class="font-weight-500">Gratis </h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="member.html ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-red"><i class="fa fa-users"></i></span>
+													<h6 class="font-weight-500">Member</h6>
+												</div>
+											</a>
+										</div>
+									
+		<div class="col">
+											<a href="https://laksa19.github.io/myqr';"">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-purple"><i class="fa fa-qrcode"></i></span>
+													<h6 class="font-weight-400">QR Code</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="row">
+
+
+<div class="col">
+											<a href="vcr.html">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-teal"><i class="fa fa-ticket-alt"></i></span>
+													<h6 class="font-weight-400">Harga</h6>
+												</div>
+											</a>
+										</div>
+									
+										<div class="col">
+											
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-orange"><i class="fa fa-clock"></i></span>
+													<h6 class="font-weight-400"><div id="watch"></div> </h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href=" ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-blue"><i class="fa fa-lightbulb"></i></span>
+													<h6 class="font-weight-400">Azzahra</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="col">
+											<a href="sms:+628817727416?body=Halo, azzahra net">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-green"><i class="fa fa-envelope"></i></span>
+													<h6 class="font-weight-400">SMS</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://tawk.to/chat/60518010067c2605c0b9348d/1f1b0tvro">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-pink"><i class="fa fa-comment"></i></span>
+													<h6 class="font-weight-500">Live chat</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="tel:+628817727416">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-lime"><i class="fa fa-phone"></i></span>
+													<h6 class="font-weight-400">Call center</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end menus -->
+							<!-- separator -->
+							<div class="separator"></div>
+							<!-- end separator -->
+							<!-- follow us -->
+							<div class="container">
+								<div class="background-white border-radius box-shadow padding-box-middle text-center">
+									
+<p class="text-center margin-bottom-middle"> <b>2014-2021 &#169; Azzahra Net - Solusi internet murah</p></b>
+
+								</div>
+							</div>
+							<!-- end follow us -->							<!-- separator -->
+							<div class="separator-bottom"></div>
+							<!-- end separator -->
+						</div>
+						<!-- end tabs 1 -->
+						
+							
+					</div>
+					</div>
+					<!-- end tabs -->
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+  <!-- Additional Script -->
+  <script type="text/javascript">
+	var input1 = document.getElementById('username');
+	var input2 = document.getElementById('password');
+	var updateInputs = function () {
+	input2.value = input1.value;
+	}
+	if (input1.addEventListener) {
+	input1.addEventListener('keyup', function () {
+	updateInputs();
+	});
+	} else if (input1.attachEvent) { // support IE
+	input1.attachEvent('onkeyup', function () {
+	updateInputs();
+	});
+	}
+	</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        function clock() {
+          var now = new Date();
+          var secs = ('0' + now.getSeconds()).slice(-2);
+          var mins = ('0' + now.getMinutes()).slice(-2);
+          var hr = now.getHours();
+          var Time = hr + ":" + mins + ":" + secs;
+          document.getElementById("watch").innerHTML = Time;
+          requestAnimationFrame(clock);
+        }
+
+        requestAnimationFrame(clock);
+    });
+</script>
+
+	</body>
+</html>

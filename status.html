@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">	
+		<link rel="icon" href="images/favicon.png">
+		<title>Azzahra</title>
+		<link rel="stylesheet" href="css/apay-2.css">
+		<link rel="stylesheet" href="css/apay-1.css">
+		<link rel="stylesheet" href="css/apay.css">
+
+$(if refresh-timeout)
+<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+$(endif)
+
+<script language="JavaScript">
+<!--
+$(if advert-pending == 'yes')
+    var popup = '';
+    function focusAdvert() {
+	if (window.focus) popup.focus();
+    }
+    function openAdvert() {
+	popup = open('$(link-advert)', 'hotspot_advert', '');
+	setTimeout("focusAdvert()", 1000);
+    }
+$(endif)
+    function openLogout() {
+	if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+$(if advert-pending == 'yes')
+	onLoad="openAdvert()"
+$(endif)
+	<body>					
+						<!-- tabs -->
+					<div class="tabs-animated-wrap">
+					<div class="tabs">					
+						<!-- tabs 1 -->
+						<div id="tab-1" class="tab tab-active page-content">							
+							<!-- title -->
+							<div class="title-apps padding-middle background-primer">
+								<div class="container">
+									<div class="row row-no-margin-bottom">
+										<div class="col">
+											<h3 class="color-white">Azzahra Net</h3>
+										</div>
+											<div class="col">
+											
+												<span class="icon-middle margin-left-small float-right color-white">
+													<i class="fas fa-wifi"></i>
+												</span>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end title -->
+							
+							<!-- profile balance -->
+							<div class="border-radius-style background-circle background-primer">
+								<div class="container">
+									<div class="background-white border-radius padding-box-middle box-shadow">
+										<div class="row row-no-margin-bottom">
+											<div class="col-60">
+												<div class="float-left margin-right-small">
+											
+												</div>
+												<div class="overflow-hidden">
+													<h6>Sisa Waktu</h6>
+													<p>$(session-time-left)</p>
+												</div>
+											</div>
+											<div class="col-40">
+												<button class="buttons float-right letter-spacing margin-top-small">$(username)</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end profile balance -->
+							
+							
+							<!-- separator -->
+							<div class="separator"></div>
+							<!-- end separator -->
+					<!-- menus -->
+							<div class="menus">
+								<div class="container">
+									<div class="row">
+										<div class="col">
+											<a href="https://wa.me/628817727416?text=Halo, saya ingin beli pulsa, apakah tersedia untuk hari ini? ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-green"><i class="fa fa-mobile"></i></span>
+													<h6 class="font-weight-500">Pulsa</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://wa.me/628817727416?text=Halo, saya ingin bel voucher, dimana saya harus membeli, apakah tersedia untuk hari ini? ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-lime"><i class="fa fa-wifi"></i></span>
+													<h6 class="font-weight-500">Wifi</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://wa.me/628817727416?text=Halo, saya ingin isi ulang data, apakah bisa tersedia? ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-purple"><i class="fa fa-compress"></i></span>
+													<h6 class="font-weight-400">Paket data</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<a href="https://wa.me/628817727416?text=Halo, saya ingin token pln, apakah tersedia untuk hari ini?  ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-yellow"><i class="fa fa-lightbulb"></i></span>
+													<h6 class="font-weight-400">Token pln</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://wa.me/628817727416?text=Halo, saya ingin token pln, apakah tersedia untuk hari ini?  ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-orange"><i class="fa fa-gamepad"></i></span>
+													<h6 class="font-weight-400">Topup</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://wa.me/628817727416?text=Halo, saya ingin bayar angsuran, apakah bisa hari ini? ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-blue"><i class="fa fa-calendar-alt"></i></span>
+													<h6 class="font-weight-500">Angsuran</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<a href="https://wa.me/628817727416?text=Halo, saya ingin token pln, apakah tersedia untuk hari ini? ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-teal"><i class="fa fa-print"></i></span>
+													<h6 class="font-weight-400">Cetak poto</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://wa.me/628817727416?text=Halo, saya ingin tarik uang tunai, apakah tersedia untuk hari ini? ">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-pink"><i class="fa fa-phone"></i></span>
+													<h6 class="font-weight-400">Bantuan</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="$(link-logout)" name="logout" onSubmit="return openLogout()">
+												<div class="background-white text-center border-radius padding-box box-shadow">
+													<span class="icon-big icon-color-red"><i class="fa fa-power-off"></i></span>
+													<h6 class="font-weight-500">Putuskan</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end menus -->
+							<!-- separator -->
+							<div class="separator"></div>
+							<!-- end separator -->
+							<!-- follow us -->
+							<div class="container">
+								<div class="background-white border-radius box-shadow padding-box-middle text-center">
+									
+<p class="text-center margin-bottom-middle"> <b>2014-2021 &#169; Azzahra Net - Solusi internet murah</a></p></b>
+
+								</div>
+							</div>
+							<!-- end follow us -->
+							<!-- separator -->
+							<div class="separator-bottom"></div>
+							<!-- end separator -->
+						</div>
+						<!-- end tabs 1 -->
+						
+							
+					</div>
+					</div>
+					<!-- end tabs -->
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>

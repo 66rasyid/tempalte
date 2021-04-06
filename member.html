@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		
+		<link rel="icon" href="images/favicon.png">
+		<title>Azzahra</title>
+
+<!-- Css-->		
+		<link rel="stylesheet" href="css/apay.css">
+		<link rel="stylesheet" href="css/apay-1.css">
+		<link rel="stylesheet" href="css/apay.css">
+	<!-- Css -->
+</head>
+	<body>							
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+
+
+
+<body class="theme-light">
+
+							<!-- login member-->
+		<div class="login-register">
+			<div class="link-closess">
+				<a href="#" class="link back float-right">
+				</a>
+			</div>
+			<div class="container">
+				<h1 class="color-primer text-center">Azzahra Member</h1>
+				<div class="separator"></div>
+<form name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" /> 
+					<input type="text" name="username" value="$(username)"  placeholder="Masukan kode Voucher ">
+					<input type="password" placeholder="Password">
+					<p class="text-center margin-bottom-middle">Login hanya dengan kode voucher? <a href="login">Klik disini</a></p>
+					<button type="submit" class="buttons buttons-center buttons-full box-shadow">Hubungkan</button>
+				</form>
+			</div>
+			<div class="separator-small"></div>						
+		</div>
+		<!-- end login member -->
+	</div>
+</div>
+
+									<div class="separator"></div>
+									<!-- follow us -->
+								
+				</div>
+			</div>
+		</div>
+		<!-- untuk script js -->
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+
+		<!-- script -->
+	</body>
+</html>
